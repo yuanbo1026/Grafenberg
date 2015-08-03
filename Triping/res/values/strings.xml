@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grafenberg</string>
+    <string name="home_button_custom">私人定制</string>
+    <string name="home_button_mein">我的行程</string>
+    <string name="home_button_highlight">精彩游记</string>
+    <string name="home_button_offer">优惠活动</string>
+    <string name="customize_country_hint">请选择国家</string>
+    <string name="customize_withness_old">老人</string>
+    <string name="customize_button_confirm">定制行程</string>
+
+</resources>
