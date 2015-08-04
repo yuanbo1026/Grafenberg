@@ -8,5 +8,7 @@
     <string name="customize_country_hint">请选择国家</string>
     <string name="customize_withness_old">老人</string>
     <string name="customize_button_confirm">定制行程</string>
+    <string name="highlight_travel_line">线路行程</string>
+    <string name="highlight_day_1">第N天</string>
 
 </resources>
