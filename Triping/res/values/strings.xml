@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Grafenberg</string>
+    <string name="app_name">格芬贝格</string>
     <string name="home_button_custom">私人定制</string>
     <string name="home_button_mein">我的行程</string>
     <string name="home_button_highlight">精彩游记</string>
