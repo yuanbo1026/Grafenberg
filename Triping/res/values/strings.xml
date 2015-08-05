@@ -15,4 +15,27 @@
     <string name="customize_start">启程日期</string>
     <string name="customize_end">返回日期</string>
 
+
+    <string-array name="country_name">
+        <item>德国</item>
+        <item>意大利</item>
+        <item>法国</item>
+        <item>西班牙</item>
+        <item>葡萄牙</item>
+        <item>希腊</item>
+        <item>瑞士</item>
+        <item>荷兰</item>
+        <item>卢森堡</item>
+        <item>奥地利</item>
+        <item>匈牙利</item>
+        <item>比利时</item>
+        <item>摩纳哥</item>
+        <item>波兰</item>
+        <item>芬兰</item>
+        <item>挪威</item>
+        <item>瑞典</item>
+        <item>丹麦</item>
+        <item>捷克</item>
+    </string-array>
+
 </resources>

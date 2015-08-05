@@ -2,15 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#3E80B4"
+              android:background="#ff99a9b4"
               android:orientation="vertical">
-
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/textview_show_country" android:textSize="17sp"
+              android:maxLines="4"
+              android:singleLine="false"
+              android:gravity="left"/>
+    <!--<TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:textSize="15sp"
+              android:gravity="left" android:text=""/>-->
     <GridView android:layout_width="match_parent"
               android:layout_height="match_parent"
-            android:id="@+id/gridview" android:layout_weight="1">
+              android:id="@+id/gridview" android:layout_weight="1">
 
     </GridView>
-    <Button android:layout_width="match_parent" android:layout_height="match_parent"
-            android:text="OK" android:layout_weight="7" android:id="@+id/dialogButtonOK"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK" android:layout_weight="7"
+            android:id="@+id/dialogButtonOK" android:gravity="center"/>
 
 </LinearLayout>
