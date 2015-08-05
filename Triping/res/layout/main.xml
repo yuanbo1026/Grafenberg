@@ -28,10 +28,11 @@
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/button_mein"
+                    android:id="@+id/button_mine"
                     android:layout_weight="1"
                     android:layout_margin="5dp"
-                    android:text="@string/home_button_mein" android:background="#ff7d90ff"/>
+                    android:text="@string/home_button_mine"
+                    android:background="#ff7d90ff"/>
         </LinearLayout>
 
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
