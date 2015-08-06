@@ -11,9 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.*;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 
 /**
  * Created by b.yuan on 05.08.2015.
@@ -109,7 +107,7 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
                     @Override
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
-                        start.setText("启程：\n" + year + "-" + (monthOfYear + 1)
+                        start.setText("�?�程：\n" + year + "-" + (monthOfYear + 1)
                                 + "-" + dayOfMonth);
                     }
                 }
@@ -125,10 +123,10 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
                 ("您选择的国家是：\n"
                         + country.getText().toString() + " \n"
                         + "与 "
-                        + (isWithChild ? " 孩子 " : "")
-                        + (isWithOld ? " 老人 " : "")
-                        + (isWithFriend ? " 朋友 " : "")
-                        + " 同行" + "\n"
+                        + (isWithChild ? " 孩�? " : "")
+                        + (isWithOld ? " �?人 " : "")
+                        + (isWithFriend ? " 朋�?� " : "")
+                        + " �?�行" + "\n"
                         + start.getText().toString() + "\n"
                         + end.getText().toString() + "\n");
 

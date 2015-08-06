@@ -9,25 +9,25 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp">
+            android:layout_margin="20dp" android:background="#cc835829">
 
         <Button android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button_country"
                 android:layout_weight="1"
-                android:hint="@string/customize_country_hint"
                 android:gravity="center"
                 android:singleLine="false"
                 android:maxLines="4"
                 android:layout_gravity="center_horizontal"
-                android:background="@android:color/darker_gray"
-                android:textSize="20sp" android:layout_margin="20dp"
-                android:padding="10dp"/>
+                android:background="#33ffffff"
+                android:layout_margin="5dp"
+                android:padding="10dp" android:textColor="@android:color/black"
+                android:text="@string/customize_country_hint"/>
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="80dp"
-                      android:layout_weight="1" android:layout_margin="20dp"
+                      android:layout_weight="1" android:layout_margin="5dp"
                       android:orientation="horizontal"
-                      android:background="@android:color/darker_gray">
+                      android:background="#33ffffff">
             <CheckBox android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:id="@+id/companion_old"
@@ -43,7 +43,8 @@
                       android:layout_margin="5dp"
                       android:layout_weight="1"
                       android:gravity="center"
-                      android:checkMark="?android:attr/listChoiceIndicatorSingle"/>
+                      android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    />
             <CheckBox android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:id="@+id/companion_friend"
@@ -51,7 +52,8 @@
                       android:layout_margin="5dp"
                       android:layout_weight="1"
                       android:gravity="center"
-                      android:checkMark="?android:attr/listChoiceIndicatorSingle"/>
+                      android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    />
         </LinearLayout>
 
         <!--<DatePicker
@@ -61,29 +63,29 @@
                 android:layout_gravity="center_horizontal" android:background="@android:color/darker_gray"/>-->
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
-            <Button android:layout_width="match_parent" android:layout_height="80dp"
+            <Button android:layout_width="match_parent" android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:id="@+id/button_start"
-                    android:background="@android:color/darker_gray"
-                    android:layout_margin="10dp"
+                    android:background="#33ffffff"
+                    android:layout_margin="5dp"
                     android:maxLines="2"
-                    android:gravity="left|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
                     android:text="@string/customize_start"/>
-            <Button android:layout_width="match_parent" android:layout_height="80dp"
+            <Button android:layout_width="match_parent" android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:id="@+id/button_end"
                     android:maxLines="2"
-                    android:background="@android:color/darker_gray"
-                    android:layout_margin="10dp"
-                    android:gravity="left|center_vertical"
+                    android:background="#33ffffff"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|center_horizontal"
                     android:text="@string/customize_end"/>
         </LinearLayout>
 
-        <Button android:layout_width="match_parent" android:layout_height="80dp"
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/button_confirm"
-                android:background="@android:color/darker_gray"
-                android:layout_margin="20dp"
+                android:background="#33ffffff"
+                android:layout_margin="5dp"
                 android:gravity="center"
                 android:text="@string/customize_button_confirm"/>
     </LinearLayout>

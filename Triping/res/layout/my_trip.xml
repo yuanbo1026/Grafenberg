@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-    <GridView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/gridView" android:layout_gravity="center_horizontal"
-            android:numColumns="2"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <de.grafenberg.Triping.OptimizeGridView
+            android:id="@+id/grid"
+            android:layout_marginLeft="@dimen/gridMarginTopLeft"
+            android:layout_marginRight="@dimen/gridMarginBottomRight"
+            android:layout_marginTop="@dimen/gridMarginTopLeft"
+            android:layout_marginBottom="@dimen/gridMarginBottomRight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="@dimen/itemSize"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:numColumns="3"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideOverlay"
+            android:stretchMode="columnWidth"
             />
-</LinearLayout>
+</RelativeLayout>

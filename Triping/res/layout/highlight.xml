@@ -2,25 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="#33ffd580">
 
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/scrollView" android:padding="20dp">
+            android:id="@+id/scrollView" android:padding="10dp"
+            android:background="#33ffffff">
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="match_parent"
-                      android:orientation="vertical" android:layout_margin="20dp"
-                      android:background="#ffa2b8bf">
+                      android:orientation="vertical" android:layout_margin="10dp"
+                      android:background="#6459a1bf">
             <LinearLayout android:layout_width="match_parent"
                           android:layout_height="match_parent" android:orientation="horizontal"
-                          android:layout_marginTop="20dp">
-                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="10dp">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="200dp"
                            android:src="@drawable/highlight_top_1" android:layout_weight="1"
-                           android:scaleType="fitCenter"/>
+                           android:scaleType="fitXY" android:layout_marginRight="5dp"
+                           android:layout_marginLeft="5dp"
+                           android:layout_gravity="center"/>
                 <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="1" android:orientation="vertical">
+                              android:layout_height="200dp"
+                              android:layout_weight="1" android:orientation="vertical"
+                              android:layout_marginRight="5dp"
+                              android:layout_marginLeft="5dp"
+                              android:layout_gravity="center" android:gravity="center">
                     <TextView android:layout_width="match_parent"
                               android:layout_height="wrap_content"
                               android:gravity="center"
