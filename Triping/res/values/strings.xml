@@ -38,4 +38,21 @@
         <item>捷克</item>
     </string-array>
 
+    <!-- confirm text -->
+    <string name="confirm_country_pick">您选择的国家是 :</string>
+    <string name="confirm_companion_with">与 </string>
+    <string name="confirm_companion_who"> 同行</string>
+    <string name="confirm_positive_button_text">确认</string>
+    <string name="confirm_country_cancel_text">取消</string>
+
+    <string-array name="people_count">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="count_hint">人数</string>
 </resources>
