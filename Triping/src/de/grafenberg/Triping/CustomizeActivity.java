@@ -32,11 +32,22 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
 	private boolean isWithChild;
 	private boolean isWithFriend;
 
+	private Spinner spinner_old;
+	private Spinner spinner_child;
+	private Spinner spinner_friend;
+	private String[] counts = new String[]{"1", "2", "3", "4", "5"};
+
+	private String old_count;
+	private String child_count;
+	private String friend_count;
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.customize);
 		context = this;
+
 		country = (Button) findViewById(R.id.button_country);
 		start = (Button) findViewById(R.id.button_start);
 		end = (Button) findViewById(R.id.button_end);
@@ -44,6 +55,10 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
 		old = (CheckBox) findViewById(R.id.companion_old);
 		child = (CheckBox) findViewById(R.id.companion_child);
 		friend = (CheckBox) findViewById(R.id.companion_friend);
+		spinner_old = (Spinner) findViewById(R.id.spinner_old);
+		spinner_child = (Spinner) findViewById(R.id.spinner_child);
+		spinner_friend = (Spinner) findViewById(R.id.spinner_friend);
+
 		country.setOnClickListener(this);
 		start.setOnClickListener(this);
 		end.setOnClickListener(this);
@@ -51,6 +66,47 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
 		old.setOnClickListener(this);
 		child.setOnClickListener(this);
 		friend.setOnClickListener(this);
+		spinner_old.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				String countText = context.getString(R.string.people_count);
+				old_count = countText.replace("?", counts[position]);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+
+			}
+
+		});
+		spinner_child.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				String countText = context.getString(R.string.people_count);
+				child_count = countText.replace("?", counts[position]);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+
+			}
+
+		});
+
+		spinner_friend.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				String countText = context.getString(R.string.people_count);
+				friend_count = countText.replace("?", counts[position]);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+
+			}
+
+		});
+
 	}
 
 	@Override
@@ -71,33 +127,20 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
 				return;
 			case R.id.companion_old:
 				isWithOld = old.isChecked();
+				spinner_old.setVisibility(isWithOld ? View.VISIBLE : View.INVISIBLE);
 				return;
 			case R.id.companion_child:
 				isWithChild = child.isChecked();
+				spinner_child.setVisibility(isWithChild ? View.VISIBLE : View.INVISIBLE);
 				return;
 			case R.id.companion_friend:
 				isWithFriend = friend.isChecked();
+				spinner_friend.setVisibility(isWithFriend ? View.VISIBLE : View.INVISIBLE);
 				return;
 			default:
 				return;
 		}
 	}
-
-    /*private void checkedBox(int id) {
-		switch (id) {
-            case R.id.companion_old:
-                isWithOld =old.isChecked();
-                return;
-            case R.id.companion_child:
-                isWithChild = true;
-                return;
-            case R.id.companion_friend:
-                isWithFriend = true;
-                return;
-            default:
-                return;
-        }
-    }*/
 
 	private void pickStartDate() {
 		Calendar c = Calendar.getInstance();
@@ -124,17 +167,17 @@ public class CustomizeActivity extends Activity implements View.OnClickListener 
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 		alertDialogBuilder.setMessage
 				(context.getString(R.string.confirm_country_pick) + "\n"
-						+ country.getText().toString() + " \n"
+						+ country.getText().toString() + " \n\n"
 						+ context.getString(R.string.confirm_companion_with)
 						+ (isWithChild ? context.getString(R.string
-						.customize_companion_child) : "")
+						.customize_companion_child) + child_count : "")
 						+ (isWithOld ? context.getString(R.string
-						.customize_companion_old) : "")
+						.customize_companion_old)+old_count : "")
 						+ (isWithFriend ? context.getString(R.string
-						.customize_companion_friend) : "")
-						+ context.getString(R.string.confirm_companion_who) + "\n"
+						.customize_companion_friend) + friend_count : "")
+						+ context.getString(R.string.confirm_companion_who) + "\n\n"
 						+ start.getText().toString() + "\n"
-						+ end.getText().toString() + "\n");
+						+ end.getText().toString() + "\n\n");
 
 		alertDialogBuilder.setPositiveButton(context.getString(R.string
 				.confirm_positive_button_text), new DialogInterface.OnClickListener() {

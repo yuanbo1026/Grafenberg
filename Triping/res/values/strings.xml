@@ -46,7 +46,6 @@
     <string name="confirm_country_cancel_text">取消</string>
 
     <string-array name="people_count">
-        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -55,4 +54,27 @@
     </string-array>
 
     <string name="count_hint">人数</string>
+    <string name="people_count">( ? 人)</string>
+
+    <string name="highlight_text_1">目的地：德国 柏林 法兰克福</string>
+    <string name="highlight_text_2">行程天数：11天</string>
+    <string name="highlight_text_3">追寻格林兄弟的足迹，造访通话王国的城堡，领略伟大建筑艺术，欣赏现代博物馆，一切尽在德国！</string>
+
+    <string name="highlight_text_4">行程特色</string>
+    <string name="highlight_text_5">穿梭于吕贝克古城，仿佛穿越到了中世纪的欧洲；</string>
+    <string name="highlight_text_6">驻足格林童话诞生的地方-卡塞尔 ；</string>
+    <string name="highlight_text_7">古堡，教堂，博物馆，历史与现代的完美融合。</string>
+    <string name="highlight_text_8">今日搭乘国际航班飞往德国首都【柏林】。抵达后专属人员接机，前往酒店入住，倒时差休息。</string>
+    <string name="highlight_text_9">【柏林国会大厦】——1884年保罗•瓦洛特设计，是历史的标志和舞台，古老的建筑艺术与新潮的现代建筑艺术交相辉映，完美的融合在一起.</string>
+    <string name="highlight_text_10">【荷尔斯滕城门】——建于1464-1477年，是吕贝克的标志，中世纪晚期德国最著名之城门，宏伟壮观，令人称奇。</string>
+    <string name="highlight_text_11">【市政厅】——德国最古老和最美丽的市政厅之一，内有哥特式和洛可可式双重建筑风格，具有独特的汉萨城市气质。</string>
+    <string name="highlight_text_12">【玛利亚教堂】——1250-1350年建成，是世界最大的哥特式红砖教堂，拥有世界上最大的机械型管风琴，其优美琴声曾吸引巴赫专程前来欣赏。</string>
+    <string name="highlight_text_13">【犹太博物馆】——欧洲最大的犹太人历史博物馆，许多人认为这个建筑本身就是一个无声的纪念碑，作为解构主义建筑的代表作，建筑无论从空中，地面，近处，还是远处，都给人以强烈的视觉冲击，让博物馆不再是照片展览的代言词，而是更多通过建筑的设计给人一种身历其境的震撼和感受。</string>
+    <string name="highlight_text_14"></string>
+
+    <string name="highlight_title_1">北京✈柏林</string>
+    <string name="highlight_title_2">柏林</string>
+    <string name="highlight_title_3">柏林-吕贝克-汉堡</string>
+
+
 </resources>

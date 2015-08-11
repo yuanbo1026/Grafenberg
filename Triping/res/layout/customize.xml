@@ -36,12 +36,14 @@
                       android:gravity="center"
                       android:checkMark="?android:attr/listChoiceIndicatorSingle"
                       android:layout_weight="1"/>
-            <Spinner android:id="@+id/old_count"
+            <Spinner android:id="@+id/spinner_old"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:prompt="@string/count_hint"
                      android:gravity="center"
-                     android:layout_weight="1" android:entries="@array/people_count"/>
+                     android:layout_weight="1"
+                     android:visibility="invisible"
+                     android:entries="@array/people_count"/>
             <CheckBox android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:id="@+id/companion_child"
@@ -51,10 +53,11 @@
                       android:gravity="center"
                       android:checkMark="?android:attr/listChoiceIndicatorSingle"
                     />
-            <Spinner android:id="@+id/child_count"
+            <Spinner android:id="@+id/spinner_child"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:gravity="center"
+                     android:visibility="invisible"
                      android:prompt="@string/count_hint" android:layout_weight="1"
             android:entries="@array/people_count"/>
             <CheckBox android:layout_width="match_parent"
@@ -66,12 +69,14 @@
                       android:gravity="center"
                       android:checkMark="?android:attr/listChoiceIndicatorSingle"
                     />
-            <Spinner android:id="@+id/friend_count"
+            <Spinner android:id="@+id/spinner_friend"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:gravity="center"
                      android:prompt="@string/count_hint"
-                     android:layout_weight="1" android:entries="@array/people_count"/>
+                     android:layout_weight="1"
+                     android:visibility="invisible"
+                     android:entries="@array/people_count"/>
         </LinearLayout>
 
         <!--<DatePicker
